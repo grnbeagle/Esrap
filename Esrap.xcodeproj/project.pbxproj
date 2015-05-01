@@ -13,6 +13,7 @@
 		537379301AF30406005DFD06 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5373792F1AF30406005DFD06 /* Images.xcassets */; };
 		537379331AF30406005DFD06 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 537379311AF30406005DFD06 /* LaunchScreen.xib */; };
 		5373793F1AF30406005DFD06 /* EsrapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5373793E1AF30406005DFD06 /* EsrapTests.swift */; };
+		B972CB4FA1B0A63D62446789 /* libPods-Esrap.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 61BA3BCA2C6DDC3ECBEAE987 /* libPods-Esrap.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		21DA0F054014E442B8965709 /* Pods-Esrap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Esrap.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Esrap/Pods-Esrap.debug.xcconfig"; sourceTree = "<group>"; };
 		537379231AF30406005DFD06 /* Esrap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Esrap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		537379271AF30406005DFD06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		537379281AF30406005DFD06 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +38,9 @@
 		537379381AF30406005DFD06 /* EsrapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EsrapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5373793D1AF30406005DFD06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5373793E1AF30406005DFD06 /* EsrapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EsrapTests.swift; sourceTree = "<group>"; };
+		537379481AF304CE005DFD06 /* Esrap-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Esrap-Bridging-Header.h"; sourceTree = "<group>"; };
+		61BA3BCA2C6DDC3ECBEAE987 /* libPods-Esrap.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Esrap.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8259BECF67AA225DD6732EF3 /* Pods-Esrap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Esrap.release.xcconfig"; path = "Pods/Target Support Files/Pods-Esrap/Pods-Esrap.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B972CB4FA1B0A63D62446789 /* libPods-Esrap.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +68,9 @@
 				537379251AF30406005DFD06 /* Esrap */,
 				5373793B1AF30406005DFD06 /* EsrapTests */,
 				537379241AF30406005DFD06 /* Products */,
+				537379481AF304CE005DFD06 /* Esrap-Bridging-Header.h */,
+				9699F89624F07CABA01C62F0 /* Pods */,
+				54B5EF19BB19F0F33FF181BA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,6 +121,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		54B5EF19BB19F0F33FF181BA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				61BA3BCA2C6DDC3ECBEAE987 /* libPods-Esrap.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9699F89624F07CABA01C62F0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				21DA0F054014E442B8965709 /* Pods-Esrap.debug.xcconfig */,
+				8259BECF67AA225DD6732EF3 /* Pods-Esrap.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -119,9 +145,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 537379421AF30406005DFD06 /* Build configuration list for PBXNativeTarget "Esrap" */;
 			buildPhases = (
+				308B886A72722C8C17199ABB /* Check Pods Manifest.lock */,
 				5373791F1AF30406005DFD06 /* Sources */,
 				537379201AF30406005DFD06 /* Frameworks */,
 				537379211AF30406005DFD06 /* Resources */,
+				F1CC1C7B230CB77B5390C6E9 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -206,6 +234,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		308B886A72722C8C17199ABB /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F1CC1C7B230CB77B5390C6E9 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Esrap/Pods-Esrap-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5373791F1AF30406005DFD06 /* Sources */ = {
@@ -338,21 +399,28 @@
 		};
 		537379431AF30406005DFD06 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21DA0F054014E442B8965709 /* Pods-Esrap.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Esrap/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Esrap-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		537379441AF30406005DFD06 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8259BECF67AA225DD6732EF3 /* Pods-Esrap.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Esrap/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Esrap-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -409,6 +477,7 @@
 				537379441AF30406005DFD06 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		537379451AF30406005DFD06 /* Build configuration list for PBXNativeTarget "EsrapTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +486,7 @@
 				537379471AF30406005DFD06 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

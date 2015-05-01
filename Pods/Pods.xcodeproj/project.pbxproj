@@ -1,0 +1,844 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03DF7929F45D236585B0EC8A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AC5A58E24E95E27FBE4C0F3 /* Foundation.framework */; };
+		07BE614D4201B58949469827 /* BFURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 03808580685E72E90F31EB2A /* BFURL.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		08A58C27DD1E7C230006DDA8 /* PFACL.h in Headers */ = {isa = PBXBuildFile; fileRef = BB53227197EEDB72F224638A /* PFACL.h */; };
+		08C0EAD01FCB038BA0ECE6F6 /* BFTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 97631FC3771A6F3212BC6B25 /* BFTask.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		0CC1C5B5544230CA4001D7DE /* BoltsVersion.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D07FB960DCBD99054E563C9 /* BoltsVersion.h */; };
+		10B3C9F4A20D33AB537C5F67 /* BFWebViewAppLinkResolver.h in Headers */ = {isa = PBXBuildFile; fileRef = B5A84FC5A8BFBC96BF65BFE3 /* BFWebViewAppLinkResolver.h */; };
+		18B54DC9435D352905628699 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AEAC9A637019B9EED06F139 /* SystemConfiguration.framework */; };
+		19C7B0D911485CC4010837AC /* PFPurchase.h in Headers */ = {isa = PBXBuildFile; fileRef = 15F23F6D8C96C11BC65FD081 /* PFPurchase.h */; };
+		1C7320E3388F796267C23D84 /* PFPush.h in Headers */ = {isa = PBXBuildFile; fileRef = 826B9694D0F40E4507B69281 /* PFPush.h */; };
+		24ADEB07AC4B25038F297FAA /* PFTwitterUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 26FAFCFE1F408C7A6DC91148 /* PFTwitterUtils.h */; };
+		272928A80F2785DAD415B7B6 /* BFAppLink.h in Headers */ = {isa = PBXBuildFile; fileRef = EAAE6F8CB086A43CA86009D0 /* BFAppLink.h */; };
+		28C619806F58E51BEDD55650 /* PFNetworkActivityIndicatorManager.h in Headers */ = {isa = PBXBuildFile; fileRef = A771D4241CBB350C3D4C65BC /* PFNetworkActivityIndicatorManager.h */; };
+		2BC161943B070DC256EC573D /* BFExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA56D24B36C13EBD645CB70 /* BFExecutor.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		3D2BB1DB332F37880CF8FB0F /* BFAppLink_Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = C0C256BB3AF9524056E72A45 /* BFAppLink_Internal.h */; };
+		41D317E039B9A4C7630E05DB /* Parse.h in Headers */ = {isa = PBXBuildFile; fileRef = 7680A759E83E9E54886B96BF /* Parse.h */; };
+		426829188AB0EBF11A120C71 /* BFAppLinkReturnToRefererView_Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C307109D8AD6CECEF6EAAF2 /* BFAppLinkReturnToRefererView_Internal.h */; };
+		42FA3F9CB6E402B7D4FC0418 /* PF_Twitter.h in Headers */ = {isa = PBXBuildFile; fileRef = CF5D645B8387AC33BA96566D /* PF_Twitter.h */; };
+		45DB46478A705FBCA792C6E4 /* PFConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 7871EDB281B4B5B78348544B /* PFConstants.h */; };
+		48DE7A6783E5AB10262ED151 /* BFExecutor.h in Headers */ = {isa = PBXBuildFile; fileRef = F0884AE2D842FF2160059F52 /* BFExecutor.h */; };
+		4F78467FA61B7C6355315A69 /* BFAppLinkTarget.m in Sources */ = {isa = PBXBuildFile; fileRef = C784BAFF28A5D8B38B7659EB /* BFAppLinkTarget.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		5190BAE9F9E7390F7DD3CF0E /* BFAppLinkTarget.h in Headers */ = {isa = PBXBuildFile; fileRef = 9113717EFDF5E0B18723154F /* BFAppLinkTarget.h */; };
+		53832C194896BF23391FB72B /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CA3A84C366D3A92A7498352 /* AudioToolbox.framework */; };
+		59BFF471F5AC52C77AD2B905 /* BFAppLinkNavigation.h in Headers */ = {isa = PBXBuildFile; fileRef = 31D7FB1B01347AE90EF88050 /* BFAppLinkNavigation.h */; };
+		645186DB51C5E6BCF4AFEBC8 /* PFObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 3466A8036DCE55B2779184E0 /* PFObject.h */; };
+		66391722600A3F16E5C6F597 /* BFAppLinkReturnToRefererController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05E19A15EEFD0FA945EDCADA /* BFAppLinkReturnToRefererController.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		6773E1368F35816013067CE0 /* PFProduct.h in Headers */ = {isa = PBXBuildFile; fileRef = 874E22B65AE5CFBB631F2C26 /* PFProduct.h */; };
+		69C07E268F2547BBC43FFB0F /* PFSubclassing.h in Headers */ = {isa = PBXBuildFile; fileRef = 57E92044452EA6738645BF2D /* PFSubclassing.h */; };
+		6A3ABC630D1E5578C2761C27 /* BFTaskCompletionSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CC3FBBC87FE19AFAAF06361 /* BFTaskCompletionSource.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		6D364BE9DC3F58A8D18E1E83 /* PFAnonymousUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B760447D2CF7DB07A4281BF /* PFAnonymousUtils.h */; };
+		717495CA139C04032C2CCCE0 /* BFAppLinkReturnToRefererController.h in Headers */ = {isa = PBXBuildFile; fileRef = 713F8F2EEF1FC454C0799B1A /* BFAppLinkReturnToRefererController.h */; };
+		735E48AB29E68B465B7FD52B /* Bolts.m in Sources */ = {isa = PBXBuildFile; fileRef = 169AA376186F29D9E3339C72 /* Bolts.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		7523202E825656C92D584B2F /* BFMeasurementEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 43C59421B6DA1F222A28D072 /* BFMeasurementEvent.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		77FA2B36F588FB928C2255AB /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C4509833C3BF36A7521EDD5 /* StoreKit.framework */; };
+		77FBE66E67405AC200341010 /* BFURL_Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DB71599E245FBEDB0B0E0DF /* BFURL_Internal.h */; };
+		7E7C77B8A2493377FAF1B7A3 /* PFCloud.h in Headers */ = {isa = PBXBuildFile; fileRef = C59BED362B960BCFB2463328 /* PFCloud.h */; };
+		83A868E01B6E0E99146946E2 /* PFRelation.h in Headers */ = {isa = PBXBuildFile; fileRef = 22ACF5CA03C74B04D38E40A7 /* PFRelation.h */; };
+		8552CA1753AC31565AA0D613 /* Bolts.h in Headers */ = {isa = PBXBuildFile; fileRef = 13BD3B1ABB0AFC124237E451 /* Bolts.h */; };
+		859FA1F92F95728D90810D56 /* PFQuery.h in Headers */ = {isa = PBXBuildFile; fileRef = A33DE72B5CE559D49332A79A /* PFQuery.h */; };
+		89B99653D7AA9181F8078E89 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7353B24F19F3054C9F0EF734 /* CoreGraphics.framework */; };
+		8BA5B3CAF417CDC3AD35E002 /* Pods-Esrap-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 05C972950D55D74E41221B0B /* Pods-Esrap-dummy.m */; };
+		8C9CC58FAA0C469DC9497202 /* PFFile.h in Headers */ = {isa = PBXBuildFile; fileRef = E5EC6431ECF8D6D9AF3039FB /* PFFile.h */; };
+		8F4F89FD0A42CA65A7C06989 /* PFObject+Subclass.h in Headers */ = {isa = PBXBuildFile; fileRef = 29835D913947D8EC45F71A54 /* PFObject+Subclass.h */; };
+		91FD2CF0367B23FF2720C8FB /* BFAppLinkNavigation.m in Sources */ = {isa = PBXBuildFile; fileRef = 902ED06CF468FB7E05008945 /* BFAppLinkNavigation.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		92000309294B7583C7D8E840 /* BFAppLink.m in Sources */ = {isa = PBXBuildFile; fileRef = 4731C0F13D8EFBEADDF47772 /* BFAppLink.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		993AF14C1B99920C544092A8 /* BFTask.h in Headers */ = {isa = PBXBuildFile; fileRef = D2BABC320781693CF648D2E4 /* BFTask.h */; };
+		9C3D1E0AE5AA5840777D57EC /* BFAppLinkReturnToRefererView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E621702F3407C26C98143D0 /* BFAppLinkReturnToRefererView.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		9D821447A66B0726E1A4AB5D /* PFInstallation.h in Headers */ = {isa = PBXBuildFile; fileRef = B6EAB90310570F5F1A3F8B97 /* PFInstallation.h */; };
+		9FCA49C5DA3AB55242910486 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99B0E3B48A52BF9EBCDD62D2 /* QuartzCore.framework */; };
+		A10E0A55D4AAAA8BD6AF016A /* PFConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = C8818DC74C375AF5EA969465 /* PFConfig.h */; };
+		A128FDC7ADBC15D7771F90CB /* PFRole.h in Headers */ = {isa = PBXBuildFile; fileRef = 04F6B0ABA6305CC5B931BDE0 /* PFRole.h */; };
+		A44328C532698D92076FFC16 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AC5A58E24E95E27FBE4C0F3 /* Foundation.framework */; };
+		A6B2991843BB78D3F568F93C /* BFAppLinkResolving.h in Headers */ = {isa = PBXBuildFile; fileRef = 79D62C1D1809D234E61B5252 /* BFAppLinkResolving.h */; };
+		A864691E2F30104555F040D6 /* PFAnalytics.h in Headers */ = {isa = PBXBuildFile; fileRef = 98B424CE9ADE0ABFAE34F707 /* PFAnalytics.h */; };
+		A8E4F2E56159137A0963387C /* BFWebViewAppLinkResolver.m in Sources */ = {isa = PBXBuildFile; fileRef = 36DD93E04CC6AE0FF3D9CA24 /* BFWebViewAppLinkResolver.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		A9262AD6F910049EAEDF31C7 /* Pods-Esrap-Bolts-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7711896D6FAE0798348DB801 /* Pods-Esrap-Bolts-dummy.m */; };
+		BAC4DCCC0F8F391533E75520 /* PFSession.h in Headers */ = {isa = PBXBuildFile; fileRef = 1778403F2232D822C05C9AE4 /* PFSession.h */; };
+		C08FAEB2D30A11EEF6AAEF5B /* PFGeoPoint.h in Headers */ = {isa = PBXBuildFile; fileRef = 56ADC1D1CA9C606DAADE2C90 /* PFGeoPoint.h */; };
+		C271681D6F97BC3216D968C8 /* PFUser.h in Headers */ = {isa = PBXBuildFile; fileRef = D1829ECF45EEF3088E29364B /* PFUser.h */; };
+		C8B761F0C1AE2A1F6011EE47 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1D47732FFABAFF55672D6F9 /* MobileCoreServices.framework */; };
+		D49582F7C9AFE425035E47CD /* BFURL.h in Headers */ = {isa = PBXBuildFile; fileRef = 878DA9FFAEEC261930F287AB /* BFURL.h */; };
+		D72515278CE7B9C18150A58D /* PFNullability.h in Headers */ = {isa = PBXBuildFile; fileRef = 44D864231E2EB2DE9A4C19FC /* PFNullability.h */; };
+		DDF098F02043E6DDE71E3132 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F58DB49CE015D29D3F2C035 /* CoreLocation.framework */; };
+		E96609D20F0BA8CC5F83098F /* Pods-Esrap-Parse-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C897593D2C3D0532764553D7 /* Pods-Esrap-Parse-dummy.m */; };
+		EA3F69FA579B64CFDE8AB049 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AC5A58E24E95E27FBE4C0F3 /* Foundation.framework */; };
+		F373612AE5AC6A48D9648D18 /* BFMeasurementEvent_Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CD6FF868670EAFB98E7154A /* BFMeasurementEvent_Internal.h */; };
+		F58AE747D13E782FC87856B4 /* BFMeasurementEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = ACF9DBA0040D2C8D8ED4E66E /* BFMeasurementEvent.h */; };
+		F633A9F998741685CD72565D /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EEED71FC0E6951655EFF7D8 /* Security.framework */; };
+		F817C7F781CA39AE743E8D33 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F449EAAFDD33E7E600E6695F /* CFNetwork.framework */; };
+		F852F5C3272DDDFF69A7DEC1 /* BFTaskCompletionSource.h in Headers */ = {isa = PBXBuildFile; fileRef = F39BB14562CCECDF745D46EE /* BFTaskCompletionSource.h */; };
+		FE02C31B794D2A5D2E06997B /* BFAppLinkReturnToRefererView.h in Headers */ = {isa = PBXBuildFile; fileRef = B289D62292B8615B754FEE3B /* BFAppLinkReturnToRefererView.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0EA3229F046B866181AA09FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C66CA404EC7D321D2D2AEAD7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9D1B4488DDA3745D30AB27A1;
+			remoteInfo = "Pods-Esrap-Bolts";
+		};
+		5933D774A4006E2EC27A84A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C66CA404EC7D321D2D2AEAD7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9D1B4488DDA3745D30AB27A1;
+			remoteInfo = "Pods-Esrap-Bolts";
+		};
+		D34D11AE9D3D39DA926750A9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C66CA404EC7D321D2D2AEAD7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FDE4701EC939EB757F6F9B6E;
+			remoteInfo = "Pods-Esrap-Parse";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03808580685E72E90F31EB2A /* BFURL.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BFURL.m; path = Bolts/iOS/BFURL.m; sourceTree = "<group>"; };
+		04F6B0ABA6305CC5B931BDE0 /* PFRole.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFRole.h; path = Parse.framework/Headers/PFRole.h; sourceTree = "<group>"; };
+		05C972950D55D74E41221B0B /* Pods-Esrap-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Esrap-dummy.m"; sourceTree = "<group>"; };
+		05E19A15EEFD0FA945EDCADA /* BFAppLinkReturnToRefererController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BFAppLinkReturnToRefererController.m; path = Bolts/iOS/BFAppLinkReturnToRefererController.m; sourceTree = "<group>"; };
+		0AC5A58E24E95E27FBE4C0F3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		10EE1BBFF989B27018D10E8E /* Pods-Esrap-Parse-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Esrap-Parse-Private.xcconfig"; sourceTree = "<group>"; };
+		11572C04802E35446C1F4E81 /* Pods-Esrap-Parse-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Esrap-Parse-prefix.pch"; sourceTree = "<group>"; };
+		13BD3B1ABB0AFC124237E451 /* Bolts.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Bolts.h; path = Bolts/Common/Bolts.h; sourceTree = "<group>"; };
+		15F23F6D8C96C11BC65FD081 /* PFPurchase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFPurchase.h; path = Parse.framework/Headers/PFPurchase.h; sourceTree = "<group>"; };
+		164F5A942DDCC352E4DCDC85 /* Pods-Esrap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Esrap.release.xcconfig"; sourceTree = "<group>"; };
+		169AA376186F29D9E3339C72 /* Bolts.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Bolts.m; path = Bolts/Common/Bolts.m; sourceTree = "<group>"; };
+		1778403F2232D822C05C9AE4 /* PFSession.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFSession.h; path = Parse.framework/Headers/PFSession.h; sourceTree = "<group>"; };
+		1B760447D2CF7DB07A4281BF /* PFAnonymousUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFAnonymousUtils.h; path = Parse.framework/Headers/PFAnonymousUtils.h; sourceTree = "<group>"; };
+		22ACF5CA03C74B04D38E40A7 /* PFRelation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFRelation.h; path = Parse.framework/Headers/PFRelation.h; sourceTree = "<group>"; };
+		26FAFCFE1F408C7A6DC91148 /* PFTwitterUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFTwitterUtils.h; path = Parse.framework/Headers/PFTwitterUtils.h; sourceTree = "<group>"; };
+		29835D913947D8EC45F71A54 /* PFObject+Subclass.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PFObject+Subclass.h"; path = "Parse.framework/Headers/PFObject+Subclass.h"; sourceTree = "<group>"; };
+		2AEAC9A637019B9EED06F139 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		313A5C2F3BC452B9B89B9164 /* Pods-Esrap-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Esrap-environment.h"; sourceTree = "<group>"; };
+		31D7FB1B01347AE90EF88050 /* BFAppLinkNavigation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BFAppLinkNavigation.h; path = Bolts/iOS/BFAppLinkNavigation.h; sourceTree = "<group>"; };
+		342C0698A5AED41E9A2B0F78 /* libParse.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = libParse.a; sourceTree = "<group>"; };
+		3466A8036DCE55B2779184E0 /* PFObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFObject.h; path = Parse.framework/Headers/PFObject.h; sourceTree = "<group>"; };
+		36DD93E04CC6AE0FF3D9CA24 /* BFWebViewAppLinkResolver.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BFWebViewAppLinkResolver.m; path = Bolts/iOS/BFWebViewAppLinkResolver.m; sourceTree = "<group>"; };
+		3CA3A84C366D3A92A7498352 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/AudioToolbox.framework; sourceTree = DEVELOPER_DIR; };
+		3CC3FBBC87FE19AFAAF06361 /* BFTaskCompletionSource.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BFTaskCompletionSource.m; path = Bolts/Common/BFTaskCompletionSource.m; sourceTree = "<group>"; };
+		43C59421B6DA1F222A28D072 /* BFMeasurementEvent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BFMeasurementEvent.m; path = Bolts/iOS/BFMeasurementEvent.m; sourceTree = "<group>"; };
+		43CB1AAA02C4F94238F85D10 /* Pods-Esrap-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Esrap-acknowledgements.plist"; sourceTree = "<group>"; };
+		44D864231E2EB2DE9A4C19FC /* PFNullability.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFNullability.h; path = Parse.framework/Headers/PFNullability.h; sourceTree = "<group>"; };
+		4731C0F13D8EFBEADDF47772 /* BFAppLink.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BFAppLink.m; path = Bolts/iOS/BFAppLink.m; sourceTree = "<group>"; };
+		4F3A991DAF4396B66C0AFABF /* Pods-Esrap-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Esrap-acknowledgements.markdown"; sourceTree = "<group>"; };
+		56ADC1D1CA9C606DAADE2C90 /* PFGeoPoint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFGeoPoint.h; path = Parse.framework/Headers/PFGeoPoint.h; sourceTree = "<group>"; };
+		57E92044452EA6738645BF2D /* PFSubclassing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFSubclassing.h; path = Parse.framework/Headers/PFSubclassing.h; sourceTree = "<group>"; };
+		5A3FC105B7A7628B38B3682E /* libPods-Esrap.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Esrap.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EEED71FC0E6951655EFF7D8 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		5F58DB49CE015D29D3F2C035 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CoreLocation.framework; sourceTree = DEVELOPER_DIR; };
+		6C03D2F868FC021DE9B796ED /* Pods-Esrap-Bolts.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Esrap-Bolts.xcconfig"; sourceTree = "<group>"; };
+		6CD6FF868670EAFB98E7154A /* BFMeasurementEvent_Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BFMeasurementEvent_Internal.h; path = Bolts/iOS/BFMeasurementEvent_Internal.h; sourceTree = "<group>"; };
+		6DA56D24B36C13EBD645CB70 /* BFExecutor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BFExecutor.m; path = Bolts/Common/BFExecutor.m; sourceTree = "<group>"; };
+		6DB71599E245FBEDB0B0E0DF /* BFURL_Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BFURL_Internal.h; path = Bolts/iOS/BFURL_Internal.h; sourceTree = "<group>"; };
+		713F8F2EEF1FC454C0799B1A /* BFAppLinkReturnToRefererController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BFAppLinkReturnToRefererController.h; path = Bolts/iOS/BFAppLinkReturnToRefererController.h; sourceTree = "<group>"; };
+		7353B24F19F3054C9F0EF734 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		7680A759E83E9E54886B96BF /* Parse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Parse.h; path = Parse.framework/Headers/Parse.h; sourceTree = "<group>"; };
+		7711896D6FAE0798348DB801 /* Pods-Esrap-Bolts-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Esrap-Bolts-dummy.m"; sourceTree = "<group>"; };
+		7871EDB281B4B5B78348544B /* PFConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFConstants.h; path = Parse.framework/Headers/PFConstants.h; sourceTree = "<group>"; };
+		79D62C1D1809D234E61B5252 /* BFAppLinkResolving.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BFAppLinkResolving.h; path = Bolts/iOS/BFAppLinkResolving.h; sourceTree = "<group>"; };
+		7C4509833C3BF36A7521EDD5 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/StoreKit.framework; sourceTree = DEVELOPER_DIR; };
+		80F32F02197A505BDA8A0E5D /* libPods-Esrap-Parse.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Esrap-Parse.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		826B9694D0F40E4507B69281 /* PFPush.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFPush.h; path = Parse.framework/Headers/PFPush.h; sourceTree = "<group>"; };
+		874E22B65AE5CFBB631F2C26 /* PFProduct.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFProduct.h; path = Parse.framework/Headers/PFProduct.h; sourceTree = "<group>"; };
+		878DA9FFAEEC261930F287AB /* BFURL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BFURL.h; path = Bolts/iOS/BFURL.h; sourceTree = "<group>"; };
+		8C307109D8AD6CECEF6EAAF2 /* BFAppLinkReturnToRefererView_Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BFAppLinkReturnToRefererView_Internal.h; path = Bolts/iOS/BFAppLinkReturnToRefererView_Internal.h; sourceTree = "<group>"; };
+		8D07FB960DCBD99054E563C9 /* BoltsVersion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BoltsVersion.h; path = Bolts/Common/BoltsVersion.h; sourceTree = "<group>"; };
+		8E621702F3407C26C98143D0 /* BFAppLinkReturnToRefererView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BFAppLinkReturnToRefererView.m; path = Bolts/iOS/BFAppLinkReturnToRefererView.m; sourceTree = "<group>"; };
+		902ED06CF468FB7E05008945 /* BFAppLinkNavigation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BFAppLinkNavigation.m; path = Bolts/iOS/BFAppLinkNavigation.m; sourceTree = "<group>"; };
+		9113717EFDF5E0B18723154F /* BFAppLinkTarget.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BFAppLinkTarget.h; path = Bolts/iOS/BFAppLinkTarget.h; sourceTree = "<group>"; };
+		97631FC3771A6F3212BC6B25 /* BFTask.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BFTask.m; path = Bolts/Common/BFTask.m; sourceTree = "<group>"; };
+		98B424CE9ADE0ABFAE34F707 /* PFAnalytics.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFAnalytics.h; path = Parse.framework/Headers/PFAnalytics.h; sourceTree = "<group>"; };
+		99B0E3B48A52BF9EBCDD62D2 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		A1824F8A8F3C80116C387BE5 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A33DE72B5CE559D49332A79A /* PFQuery.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFQuery.h; path = Parse.framework/Headers/PFQuery.h; sourceTree = "<group>"; };
+		A771D4241CBB350C3D4C65BC /* PFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFNetworkActivityIndicatorManager.h; path = Parse.framework/Headers/PFNetworkActivityIndicatorManager.h; sourceTree = "<group>"; };
+		ACF9DBA0040D2C8D8ED4E66E /* BFMeasurementEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BFMeasurementEvent.h; path = Bolts/iOS/BFMeasurementEvent.h; sourceTree = "<group>"; };
+		B289D62292B8615B754FEE3B /* BFAppLinkReturnToRefererView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BFAppLinkReturnToRefererView.h; path = Bolts/iOS/BFAppLinkReturnToRefererView.h; sourceTree = "<group>"; };
+		B5A84FC5A8BFBC96BF65BFE3 /* BFWebViewAppLinkResolver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BFWebViewAppLinkResolver.h; path = Bolts/iOS/BFWebViewAppLinkResolver.h; sourceTree = "<group>"; };
+		B6EAB90310570F5F1A3F8B97 /* PFInstallation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFInstallation.h; path = Parse.framework/Headers/PFInstallation.h; sourceTree = "<group>"; };
+		BB53227197EEDB72F224638A /* PFACL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFACL.h; path = Parse.framework/Headers/PFACL.h; sourceTree = "<group>"; };
+		BFA8A411A3759CFC0AE48A99 /* Pods-Esrap-Bolts-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Esrap-Bolts-prefix.pch"; sourceTree = "<group>"; };
+		C0C256BB3AF9524056E72A45 /* BFAppLink_Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BFAppLink_Internal.h; path = Bolts/iOS/BFAppLink_Internal.h; sourceTree = "<group>"; };
+		C5316A34AB4B310CA98BB67C /* libPods-Esrap-Bolts.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Esrap-Bolts.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C59BED362B960BCFB2463328 /* PFCloud.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFCloud.h; path = Parse.framework/Headers/PFCloud.h; sourceTree = "<group>"; };
+		C784BAFF28A5D8B38B7659EB /* BFAppLinkTarget.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BFAppLinkTarget.m; path = Bolts/iOS/BFAppLinkTarget.m; sourceTree = "<group>"; };
+		C8818DC74C375AF5EA969465 /* PFConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFConfig.h; path = Parse.framework/Headers/PFConfig.h; sourceTree = "<group>"; };
+		C897593D2C3D0532764553D7 /* Pods-Esrap-Parse-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Esrap-Parse-dummy.m"; sourceTree = "<group>"; };
+		CE2D5232490F5B6EC0CDFCE9 /* Pods-Esrap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Esrap.debug.xcconfig"; sourceTree = "<group>"; };
+		CF5D645B8387AC33BA96566D /* PF_Twitter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PF_Twitter.h; path = Parse.framework/Headers/PF_Twitter.h; sourceTree = "<group>"; };
+		D1829ECF45EEF3088E29364B /* PFUser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFUser.h; path = Parse.framework/Headers/PFUser.h; sourceTree = "<group>"; };
+		D2BABC320781693CF648D2E4 /* BFTask.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BFTask.h; path = Bolts/Common/BFTask.h; sourceTree = "<group>"; };
+		D46CB7E26B9743FC96AF25B5 /* Pods-Esrap-Bolts-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Esrap-Bolts-Private.xcconfig"; sourceTree = "<group>"; };
+		D9DF6779998A6B5DFAB3621A /* Pods-Esrap-Parse.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Esrap-Parse.xcconfig"; sourceTree = "<group>"; };
+		E5EC6431ECF8D6D9AF3039FB /* PFFile.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFFile.h; path = Parse.framework/Headers/PFFile.h; sourceTree = "<group>"; };
+		E8381290F7A2DB2054739DA3 /* Pods-Esrap-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Esrap-resources.sh"; sourceTree = "<group>"; };
+		EAAE6F8CB086A43CA86009D0 /* BFAppLink.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BFAppLink.h; path = Bolts/iOS/BFAppLink.h; sourceTree = "<group>"; };
+		F0884AE2D842FF2160059F52 /* BFExecutor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BFExecutor.h; path = Bolts/Common/BFExecutor.h; sourceTree = "<group>"; };
+		F1D47732FFABAFF55672D6F9 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
+		F39BB14562CCECDF745D46EE /* BFTaskCompletionSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BFTaskCompletionSource.h; path = Bolts/Common/BFTaskCompletionSource.h; sourceTree = "<group>"; };
+		F449EAAFDD33E7E600E6695F /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B433E37AB847D395BD64806C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA3F69FA579B64CFDE8AB049 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C04BC062B5C4C70BFD46F864 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53832C194896BF23391FB72B /* AudioToolbox.framework in Frameworks */,
+				F817C7F781CA39AE743E8D33 /* CFNetwork.framework in Frameworks */,
+				89B99653D7AA9181F8078E89 /* CoreGraphics.framework in Frameworks */,
+				DDF098F02043E6DDE71E3132 /* CoreLocation.framework in Frameworks */,
+				A44328C532698D92076FFC16 /* Foundation.framework in Frameworks */,
+				C8B761F0C1AE2A1F6011EE47 /* MobileCoreServices.framework in Frameworks */,
+				9FCA49C5DA3AB55242910486 /* QuartzCore.framework in Frameworks */,
+				F633A9F998741685CD72565D /* Security.framework in Frameworks */,
+				77FA2B36F588FB928C2255AB /* StoreKit.framework in Frameworks */,
+				18B54DC9435D352905628699 /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5AAD87F7B7B704BEC40721F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03DF7929F45D236585B0EC8A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01FC6C8BD1ED54314C2FBCBF /* Pods-Esrap */ = {
+			isa = PBXGroup;
+			children = (
+				4F3A991DAF4396B66C0AFABF /* Pods-Esrap-acknowledgements.markdown */,
+				43CB1AAA02C4F94238F85D10 /* Pods-Esrap-acknowledgements.plist */,
+				05C972950D55D74E41221B0B /* Pods-Esrap-dummy.m */,
+				313A5C2F3BC452B9B89B9164 /* Pods-Esrap-environment.h */,
+				E8381290F7A2DB2054739DA3 /* Pods-Esrap-resources.sh */,
+				CE2D5232490F5B6EC0CDFCE9 /* Pods-Esrap.debug.xcconfig */,
+				164F5A942DDCC352E4DCDC85 /* Pods-Esrap.release.xcconfig */,
+			);
+			name = "Pods-Esrap";
+			path = "Target Support Files/Pods-Esrap";
+			sourceTree = "<group>";
+		};
+		17DD8EE0BBBBB183652C55E9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				84BFD01499046FB1FD40FCE2 /* Bolts */,
+				2D9092CD86EB3017E6D2ED7F /* Parse */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		25ECB2391AEB6A418BCE8B0D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9C9763FA2AEC9D02E59E73DD /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2D9092CD86EB3017E6D2ED7F /* Parse */ = {
+			isa = PBXGroup;
+			children = (
+				BB53227197EEDB72F224638A /* PFACL.h */,
+				98B424CE9ADE0ABFAE34F707 /* PFAnalytics.h */,
+				1B760447D2CF7DB07A4281BF /* PFAnonymousUtils.h */,
+				C59BED362B960BCFB2463328 /* PFCloud.h */,
+				C8818DC74C375AF5EA969465 /* PFConfig.h */,
+				7871EDB281B4B5B78348544B /* PFConstants.h */,
+				E5EC6431ECF8D6D9AF3039FB /* PFFile.h */,
+				56ADC1D1CA9C606DAADE2C90 /* PFGeoPoint.h */,
+				B6EAB90310570F5F1A3F8B97 /* PFInstallation.h */,
+				A771D4241CBB350C3D4C65BC /* PFNetworkActivityIndicatorManager.h */,
+				44D864231E2EB2DE9A4C19FC /* PFNullability.h */,
+				3466A8036DCE55B2779184E0 /* PFObject.h */,
+				29835D913947D8EC45F71A54 /* PFObject+Subclass.h */,
+				874E22B65AE5CFBB631F2C26 /* PFProduct.h */,
+				15F23F6D8C96C11BC65FD081 /* PFPurchase.h */,
+				826B9694D0F40E4507B69281 /* PFPush.h */,
+				A33DE72B5CE559D49332A79A /* PFQuery.h */,
+				22ACF5CA03C74B04D38E40A7 /* PFRelation.h */,
+				04F6B0ABA6305CC5B931BDE0 /* PFRole.h */,
+				1778403F2232D822C05C9AE4 /* PFSession.h */,
+				57E92044452EA6738645BF2D /* PFSubclassing.h */,
+				26FAFCFE1F408C7A6DC91148 /* PFTwitterUtils.h */,
+				D1829ECF45EEF3088E29364B /* PFUser.h */,
+				CF5D645B8387AC33BA96566D /* PF_Twitter.h */,
+				7680A759E83E9E54886B96BF /* Parse.h */,
+				457F85CCA9792B8485C56DA8 /* Frameworks */,
+				EE842A58367D5B3C611BF874 /* Support Files */,
+			);
+			path = Parse;
+			sourceTree = "<group>";
+		};
+		457F85CCA9792B8485C56DA8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				342C0698A5AED41E9A2B0F78 /* libParse.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6272AE7D5288E66B3293A1E1 = {
+			isa = PBXGroup;
+			children = (
+				A1824F8A8F3C80116C387BE5 /* Podfile */,
+				25ECB2391AEB6A418BCE8B0D /* Frameworks */,
+				17DD8EE0BBBBB183652C55E9 /* Pods */,
+				96724152B9252C96D070CE8E /* Products */,
+				8E53FBEC856741B3F90C3B23 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		693114FF11CDB3E40C29C297 /* AppLinks */ = {
+			isa = PBXGroup;
+			children = (
+				EAAE6F8CB086A43CA86009D0 /* BFAppLink.h */,
+				4731C0F13D8EFBEADDF47772 /* BFAppLink.m */,
+				31D7FB1B01347AE90EF88050 /* BFAppLinkNavigation.h */,
+				902ED06CF468FB7E05008945 /* BFAppLinkNavigation.m */,
+				79D62C1D1809D234E61B5252 /* BFAppLinkResolving.h */,
+				713F8F2EEF1FC454C0799B1A /* BFAppLinkReturnToRefererController.h */,
+				05E19A15EEFD0FA945EDCADA /* BFAppLinkReturnToRefererController.m */,
+				B289D62292B8615B754FEE3B /* BFAppLinkReturnToRefererView.h */,
+				8E621702F3407C26C98143D0 /* BFAppLinkReturnToRefererView.m */,
+				8C307109D8AD6CECEF6EAAF2 /* BFAppLinkReturnToRefererView_Internal.h */,
+				9113717EFDF5E0B18723154F /* BFAppLinkTarget.h */,
+				C784BAFF28A5D8B38B7659EB /* BFAppLinkTarget.m */,
+				C0C256BB3AF9524056E72A45 /* BFAppLink_Internal.h */,
+				ACF9DBA0040D2C8D8ED4E66E /* BFMeasurementEvent.h */,
+				43C59421B6DA1F222A28D072 /* BFMeasurementEvent.m */,
+				6CD6FF868670EAFB98E7154A /* BFMeasurementEvent_Internal.h */,
+				878DA9FFAEEC261930F287AB /* BFURL.h */,
+				03808580685E72E90F31EB2A /* BFURL.m */,
+				6DB71599E245FBEDB0B0E0DF /* BFURL_Internal.h */,
+				B5A84FC5A8BFBC96BF65BFE3 /* BFWebViewAppLinkResolver.h */,
+				36DD93E04CC6AE0FF3D9CA24 /* BFWebViewAppLinkResolver.m */,
+			);
+			name = AppLinks;
+			sourceTree = "<group>";
+		};
+		84BFD01499046FB1FD40FCE2 /* Bolts */ = {
+			isa = PBXGroup;
+			children = (
+				693114FF11CDB3E40C29C297 /* AppLinks */,
+				E9FA25DE11FE6ACBCD4CDFB1 /* Support Files */,
+				D7C21776F371E100E95FE1B8 /* Tasks */,
+			);
+			path = Bolts;
+			sourceTree = "<group>";
+		};
+		8E53FBEC856741B3F90C3B23 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				01FC6C8BD1ED54314C2FBCBF /* Pods-Esrap */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		96724152B9252C96D070CE8E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5A3FC105B7A7628B38B3682E /* libPods-Esrap.a */,
+				C5316A34AB4B310CA98BB67C /* libPods-Esrap-Bolts.a */,
+				80F32F02197A505BDA8A0E5D /* libPods-Esrap-Parse.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9C9763FA2AEC9D02E59E73DD /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3CA3A84C366D3A92A7498352 /* AudioToolbox.framework */,
+				F449EAAFDD33E7E600E6695F /* CFNetwork.framework */,
+				7353B24F19F3054C9F0EF734 /* CoreGraphics.framework */,
+				5F58DB49CE015D29D3F2C035 /* CoreLocation.framework */,
+				0AC5A58E24E95E27FBE4C0F3 /* Foundation.framework */,
+				F1D47732FFABAFF55672D6F9 /* MobileCoreServices.framework */,
+				99B0E3B48A52BF9EBCDD62D2 /* QuartzCore.framework */,
+				5EEED71FC0E6951655EFF7D8 /* Security.framework */,
+				7C4509833C3BF36A7521EDD5 /* StoreKit.framework */,
+				2AEAC9A637019B9EED06F139 /* SystemConfiguration.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		D7C21776F371E100E95FE1B8 /* Tasks */ = {
+			isa = PBXGroup;
+			children = (
+				F0884AE2D842FF2160059F52 /* BFExecutor.h */,
+				6DA56D24B36C13EBD645CB70 /* BFExecutor.m */,
+				D2BABC320781693CF648D2E4 /* BFTask.h */,
+				97631FC3771A6F3212BC6B25 /* BFTask.m */,
+				F39BB14562CCECDF745D46EE /* BFTaskCompletionSource.h */,
+				3CC3FBBC87FE19AFAAF06361 /* BFTaskCompletionSource.m */,
+				13BD3B1ABB0AFC124237E451 /* Bolts.h */,
+				169AA376186F29D9E3339C72 /* Bolts.m */,
+				8D07FB960DCBD99054E563C9 /* BoltsVersion.h */,
+			);
+			name = Tasks;
+			sourceTree = "<group>";
+		};
+		E9FA25DE11FE6ACBCD4CDFB1 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6C03D2F868FC021DE9B796ED /* Pods-Esrap-Bolts.xcconfig */,
+				D46CB7E26B9743FC96AF25B5 /* Pods-Esrap-Bolts-Private.xcconfig */,
+				7711896D6FAE0798348DB801 /* Pods-Esrap-Bolts-dummy.m */,
+				BFA8A411A3759CFC0AE48A99 /* Pods-Esrap-Bolts-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-Esrap-Bolts";
+			sourceTree = "<group>";
+		};
+		EE842A58367D5B3C611BF874 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D9DF6779998A6B5DFAB3621A /* Pods-Esrap-Parse.xcconfig */,
+				10EE1BBFF989B27018D10E8E /* Pods-Esrap-Parse-Private.xcconfig */,
+				C897593D2C3D0532764553D7 /* Pods-Esrap-Parse-dummy.m */,
+				11572C04802E35446C1F4E81 /* Pods-Esrap-Parse-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-Esrap-Parse";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2951A27E91F60E92B3410514 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08A58C27DD1E7C230006DDA8 /* PFACL.h in Headers */,
+				A864691E2F30104555F040D6 /* PFAnalytics.h in Headers */,
+				6D364BE9DC3F58A8D18E1E83 /* PFAnonymousUtils.h in Headers */,
+				7E7C77B8A2493377FAF1B7A3 /* PFCloud.h in Headers */,
+				A10E0A55D4AAAA8BD6AF016A /* PFConfig.h in Headers */,
+				45DB46478A705FBCA792C6E4 /* PFConstants.h in Headers */,
+				8C9CC58FAA0C469DC9497202 /* PFFile.h in Headers */,
+				C08FAEB2D30A11EEF6AAEF5B /* PFGeoPoint.h in Headers */,
+				9D821447A66B0726E1A4AB5D /* PFInstallation.h in Headers */,
+				28C619806F58E51BEDD55650 /* PFNetworkActivityIndicatorManager.h in Headers */,
+				D72515278CE7B9C18150A58D /* PFNullability.h in Headers */,
+				8F4F89FD0A42CA65A7C06989 /* PFObject+Subclass.h in Headers */,
+				645186DB51C5E6BCF4AFEBC8 /* PFObject.h in Headers */,
+				6773E1368F35816013067CE0 /* PFProduct.h in Headers */,
+				19C7B0D911485CC4010837AC /* PFPurchase.h in Headers */,
+				1C7320E3388F796267C23D84 /* PFPush.h in Headers */,
+				859FA1F92F95728D90810D56 /* PFQuery.h in Headers */,
+				83A868E01B6E0E99146946E2 /* PFRelation.h in Headers */,
+				A128FDC7ADBC15D7771F90CB /* PFRole.h in Headers */,
+				BAC4DCCC0F8F391533E75520 /* PFSession.h in Headers */,
+				69C07E268F2547BBC43FFB0F /* PFSubclassing.h in Headers */,
+				24ADEB07AC4B25038F297FAA /* PFTwitterUtils.h in Headers */,
+				C271681D6F97BC3216D968C8 /* PFUser.h in Headers */,
+				42FA3F9CB6E402B7D4FC0418 /* PF_Twitter.h in Headers */,
+				41D317E039B9A4C7630E05DB /* Parse.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEDE0DC8ED95E0CB95DF73DF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				272928A80F2785DAD415B7B6 /* BFAppLink.h in Headers */,
+				59BFF471F5AC52C77AD2B905 /* BFAppLinkNavigation.h in Headers */,
+				A6B2991843BB78D3F568F93C /* BFAppLinkResolving.h in Headers */,
+				717495CA139C04032C2CCCE0 /* BFAppLinkReturnToRefererController.h in Headers */,
+				FE02C31B794D2A5D2E06997B /* BFAppLinkReturnToRefererView.h in Headers */,
+				426829188AB0EBF11A120C71 /* BFAppLinkReturnToRefererView_Internal.h in Headers */,
+				5190BAE9F9E7390F7DD3CF0E /* BFAppLinkTarget.h in Headers */,
+				3D2BB1DB332F37880CF8FB0F /* BFAppLink_Internal.h in Headers */,
+				48DE7A6783E5AB10262ED151 /* BFExecutor.h in Headers */,
+				F58AE747D13E782FC87856B4 /* BFMeasurementEvent.h in Headers */,
+				F373612AE5AC6A48D9648D18 /* BFMeasurementEvent_Internal.h in Headers */,
+				993AF14C1B99920C544092A8 /* BFTask.h in Headers */,
+				F852F5C3272DDDFF69A7DEC1 /* BFTaskCompletionSource.h in Headers */,
+				D49582F7C9AFE425035E47CD /* BFURL.h in Headers */,
+				77FBE66E67405AC200341010 /* BFURL_Internal.h in Headers */,
+				10B3C9F4A20D33AB537C5F67 /* BFWebViewAppLinkResolver.h in Headers */,
+				8552CA1753AC31565AA0D613 /* Bolts.h in Headers */,
+				0CC1C5B5544230CA4001D7DE /* BoltsVersion.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		32A7D8F0823DB9CBE493E114 /* Pods-Esrap */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDA5BF956EF7342097229434 /* Build configuration list for PBXNativeTarget "Pods-Esrap" */;
+			buildPhases = (
+				FC75612F2B11ED1EE99A3102 /* Sources */,
+				D5AAD87F7B7B704BEC40721F /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C3C242AA577955E666F7F3BC /* PBXTargetDependency */,
+				02393E36DB58D7CFF671DEB8 /* PBXTargetDependency */,
+			);
+			name = "Pods-Esrap";
+			productName = "Pods-Esrap";
+			productReference = 5A3FC105B7A7628B38B3682E /* libPods-Esrap.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		9D1B4488DDA3745D30AB27A1 /* Pods-Esrap-Bolts */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4337D446B30A6F8496E35338 /* Build configuration list for PBXNativeTarget "Pods-Esrap-Bolts" */;
+			buildPhases = (
+				7422FC712F525032709156DF /* Sources */,
+				B433E37AB847D395BD64806C /* Frameworks */,
+				BEDE0DC8ED95E0CB95DF73DF /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Esrap-Bolts";
+			productName = "Pods-Esrap-Bolts";
+			productReference = C5316A34AB4B310CA98BB67C /* libPods-Esrap-Bolts.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		FDE4701EC939EB757F6F9B6E /* Pods-Esrap-Parse */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0FBC5D5C4D106F99856E7DE5 /* Build configuration list for PBXNativeTarget "Pods-Esrap-Parse" */;
+			buildPhases = (
+				566844AF0D05C61FBD344E2F /* Sources */,
+				C04BC062B5C4C70BFD46F864 /* Frameworks */,
+				2951A27E91F60E92B3410514 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B44006A991985545458689E7 /* PBXTargetDependency */,
+			);
+			name = "Pods-Esrap-Parse";
+			productName = "Pods-Esrap-Parse";
+			productReference = 80F32F02197A505BDA8A0E5D /* libPods-Esrap-Parse.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C66CA404EC7D321D2D2AEAD7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+			};
+			buildConfigurationList = C8EA6DC13D4D26FA967454D0 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 6272AE7D5288E66B3293A1E1;
+			productRefGroup = 96724152B9252C96D070CE8E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				32A7D8F0823DB9CBE493E114 /* Pods-Esrap */,
+				9D1B4488DDA3745D30AB27A1 /* Pods-Esrap-Bolts */,
+				FDE4701EC939EB757F6F9B6E /* Pods-Esrap-Parse */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		566844AF0D05C61FBD344E2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E96609D20F0BA8CC5F83098F /* Pods-Esrap-Parse-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7422FC712F525032709156DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92000309294B7583C7D8E840 /* BFAppLink.m in Sources */,
+				91FD2CF0367B23FF2720C8FB /* BFAppLinkNavigation.m in Sources */,
+				66391722600A3F16E5C6F597 /* BFAppLinkReturnToRefererController.m in Sources */,
+				9C3D1E0AE5AA5840777D57EC /* BFAppLinkReturnToRefererView.m in Sources */,
+				4F78467FA61B7C6355315A69 /* BFAppLinkTarget.m in Sources */,
+				2BC161943B070DC256EC573D /* BFExecutor.m in Sources */,
+				7523202E825656C92D584B2F /* BFMeasurementEvent.m in Sources */,
+				08C0EAD01FCB038BA0ECE6F6 /* BFTask.m in Sources */,
+				6A3ABC630D1E5578C2761C27 /* BFTaskCompletionSource.m in Sources */,
+				07BE614D4201B58949469827 /* BFURL.m in Sources */,
+				A8E4F2E56159137A0963387C /* BFWebViewAppLinkResolver.m in Sources */,
+				735E48AB29E68B465B7FD52B /* Bolts.m in Sources */,
+				A9262AD6F910049EAEDF31C7 /* Pods-Esrap-Bolts-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC75612F2B11ED1EE99A3102 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BA5B3CAF417CDC3AD35E002 /* Pods-Esrap-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		02393E36DB58D7CFF671DEB8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Esrap-Parse";
+			target = FDE4701EC939EB757F6F9B6E /* Pods-Esrap-Parse */;
+			targetProxy = D34D11AE9D3D39DA926750A9 /* PBXContainerItemProxy */;
+		};
+		B44006A991985545458689E7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Esrap-Bolts";
+			target = 9D1B4488DDA3745D30AB27A1 /* Pods-Esrap-Bolts */;
+			targetProxy = 0EA3229F046B866181AA09FD /* PBXContainerItemProxy */;
+		};
+		C3C242AA577955E666F7F3BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Esrap-Bolts";
+			target = 9D1B4488DDA3745D30AB27A1 /* Pods-Esrap-Bolts */;
+			targetProxy = 5933D774A4006E2EC27A84A2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1DC208C7A1E445124CF95E38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10EE1BBFF989B27018D10E8E /* Pods-Esrap-Parse-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Esrap-Parse/Pods-Esrap-Parse-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		3FD29106406CACB0DB41F0E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D46CB7E26B9743FC96AF25B5 /* Pods-Esrap-Bolts-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Esrap-Bolts/Pods-Esrap-Bolts-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		5BF0C78E04328DF6B5541103 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		A92E68BEEAE8184A7CD7F3CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10EE1BBFF989B27018D10E8E /* Pods-Esrap-Parse-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Esrap-Parse/Pods-Esrap-Parse-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		D9327CA56D5401A6D075CF5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE2D5232490F5B6EC0CDFCE9 /* Pods-Esrap.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		D95C910BB6BF2B270E9A5432 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 164F5A942DDCC352E4DCDC85 /* Pods-Esrap.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		DAE17A2F1D74094FF5D6400A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D46CB7E26B9743FC96AF25B5 /* Pods-Esrap-Bolts-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Esrap-Bolts/Pods-Esrap-Bolts-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		E170AC7F8644E51F6240745D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0FBC5D5C4D106F99856E7DE5 /* Build configuration list for PBXNativeTarget "Pods-Esrap-Parse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DC208C7A1E445124CF95E38 /* Debug */,
+				A92E68BEEAE8184A7CD7F3CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4337D446B30A6F8496E35338 /* Build configuration list for PBXNativeTarget "Pods-Esrap-Bolts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAE17A2F1D74094FF5D6400A /* Debug */,
+				3FD29106406CACB0DB41F0E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C8EA6DC13D4D26FA967454D0 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BF0C78E04328DF6B5541103 /* Debug */,
+				E170AC7F8644E51F6240745D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDA5BF956EF7342097229434 /* Build configuration list for PBXNativeTarget "Pods-Esrap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9327CA56D5401A6D075CF5C /* Debug */,
+				D95C910BB6BF2B270E9A5432 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C66CA404EC7D321D2D2AEAD7 /* Project object */;
+}
