@@ -10,6 +10,10 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
+    @IBOutlet weak var signUpButton: UIButton!
+    @IBOutlet weak var signInButton: UIButton!
+    @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var emailTextField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,7 +25,38 @@ class LoginViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func onSignIn(sender: AnyObject) {
+        let username = emailTextField.text
+        let password = passwordTextField.text
 
+        PFUser.logInWithUsernameInBackground(username, password: password) { (user: PFUser?, error: NSError?) -> Void in
+            if let user = user {
+                println("success signing in")
+            } else {
+                println("error signing in = \(error)")
+            }
+        }
+    }
+
+    @IBAction func onSignUp(sender: AnyObject) {
+        var user = PFUser()
+        user.username = emailTextField.text
+        user.password = passwordTextField.text
+        user.email = emailTextField.text
+
+        user.signUpInBackgroundWithBlock { (suceeded, error) -> Void in
+            if (error == nil) {
+                println("success signing up")
+            } else {
+                if let userInfo = error?.userInfo,
+                       error = userInfo["error"] as? String {
+                    println("error = \(error)")
+                }
+            }
+        }
+
+
+    }
     /*
     // MARK: - Navigation
 
