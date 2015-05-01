@@ -13,6 +13,8 @@
 		537379331AF30406005DFD06 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 537379311AF30406005DFD06 /* LaunchScreen.xib */; };
 		5373793F1AF30406005DFD06 /* EsrapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5373793E1AF30406005DFD06 /* EsrapTests.swift */; };
 		5373794C1AF30588005DFD06 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5373794B1AF30588005DFD06 /* LoginViewController.swift */; };
+		5373794E1AF30C8A005DFD06 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5373794D1AF30C8A005DFD06 /* ChatViewController.swift */; };
+		537379501AF30F4D005DFD06 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5373794F1AF30F4D005DFD06 /* MessageCell.swift */; };
 		B972CB4FA1B0A63D62446789 /* libPods-Esrap.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 61BA3BCA2C6DDC3ECBEAE987 /* libPods-Esrap.a */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +41,8 @@
 		5373793E1AF30406005DFD06 /* EsrapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EsrapTests.swift; sourceTree = "<group>"; };
 		537379481AF304CE005DFD06 /* Esrap-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Esrap-Bridging-Header.h"; sourceTree = "<group>"; };
 		5373794B1AF30588005DFD06 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		5373794D1AF30C8A005DFD06 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		5373794F1AF30F4D005DFD06 /* MessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
 		61BA3BCA2C6DDC3ECBEAE987 /* libPods-Esrap.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Esrap.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8259BECF67AA225DD6732EF3 /* Pods-Esrap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Esrap.release.xcconfig"; path = "Pods/Target Support Files/Pods-Esrap/Pods-Esrap.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -88,10 +92,12 @@
 			children = (
 				537379281AF30406005DFD06 /* AppDelegate.swift */,
 				5373792C1AF30406005DFD06 /* Main.storyboard */,
+				5373794F1AF30F4D005DFD06 /* MessageCell.swift */,
 				5373792F1AF30406005DFD06 /* Images.xcassets */,
 				537379311AF30406005DFD06 /* LaunchScreen.xib */,
 				537379261AF30406005DFD06 /* Supporting Files */,
 				5373794B1AF30588005DFD06 /* LoginViewController.swift */,
+				5373794D1AF30C8A005DFD06 /* ChatViewController.swift */,
 			);
 			path = Esrap;
 			sourceTree = "<group>";
@@ -274,6 +280,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5373794C1AF30588005DFD06 /* LoginViewController.swift in Sources */,
+				537379501AF30F4D005DFD06 /* MessageCell.swift in Sources */,
+				5373794E1AF30C8A005DFD06 /* ChatViewController.swift in Sources */,
 				537379291AF30406005DFD06 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -32,6 +32,7 @@ class LoginViewController: UIViewController {
         PFUser.logInWithUsernameInBackground(username, password: password) { (user: PFUser?, error: NSError?) -> Void in
             if let user = user {
                 println("success signing in")
+                self.goToChatViewController()
             } else {
                 println("error signing in = \(error)")
             }
@@ -47,6 +48,7 @@ class LoginViewController: UIViewController {
         user.signUpInBackgroundWithBlock { (suceeded, error) -> Void in
             if (error == nil) {
                 println("success signing up")
+                self.goToChatViewController()
             } else {
                 if let userInfo = error?.userInfo,
                        error = userInfo["error"] as? String {
@@ -56,6 +58,10 @@ class LoginViewController: UIViewController {
         }
 
 
+    }
+
+    func goToChatViewController() {
+        performSegueWithIdentifier("chatSegue", sender: self)
     }
     /*
     // MARK: - Navigation
